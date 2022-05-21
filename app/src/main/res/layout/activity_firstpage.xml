@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Firstpage">
+
+    <TextView
+        android:id="@+id/etcrea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgimage"
+        tools:text="Popular Icecreams" />
+
+    <TextView
+        android:id="@+id/ethi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:text="Hi,friends,feel welcomed and choose and ice cream"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/etcrea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ethi"
+        app:srcCompat="@drawable/d" />
+
+    <TextView
+        android:id="@+id/etstra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="8dp"
+        android:text="Strawberry"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/etchocolate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcrea" />
+
+    <TextView
+        android:id="@+id/etchocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="8dp"
+        android:text="Chocolate"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/etbanana"
+        app:layout_constraintStart_toEndOf="@+id/etstra"
+        app:layout_constraintTop_toBottomOf="@+id/etcrea" />
+
+    <TextView
+        android:id="@+id/etbanana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="52dp"
+        android:text="Banana"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcrea" />
+
+    <TextView
+        android:id="@+id/ettextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="99dp"
+        android:text="We deal with the best icecreams and different flavour,our shop values our customers and we sell our products at a cheap price"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnprevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#FF9800"
+        android:text="Previous"
+        app:layout_constraintBottom_toBottomOf="@+id/btnnext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnnext" />
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnprevious" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
